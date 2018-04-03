@@ -1,0 +1,55 @@
+/*Generics rules*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.parralax {
+	background-image: url("../assets/images/learning.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+/*  Title */
+
+header > h1{
+	color: #fff;
+	margin-top: 0;
+	text-align: center;
+	
+}
+
+
+/* Navigation*/
+
+nav{
+	height: 50px;
+	background-color: #fff;
+}
+
+nav > ul{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+nav > ul > li{
+	padding: 10px 20px;
+	font-weight: 700;
+	cursor: pointer;
+
+}
+
+nav > ul > li:hover{
+	background-color: #000;
+	color: #fff;
+	transform: scale(1.2, 1.2);
+	transition: all 0.5s;
+}
