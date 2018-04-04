@@ -1,55 +1,93 @@
-/*Generics rules*/
-
-html, body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Ubuntu', sans-serif;
+/* Colors */
+/* Fonts */
+/* Assets */
+/* general reset*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu", sans-serif;
 }
 
-
-.parralax {
-	background-image: url("../assets/images/learning.jpg");
-	height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
+/* Colors */
+/* Fonts */
+/* Assets */
+/* navigation */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
 }
 
-/*  Title */
-
-header > h1{
-	color: #fff;
-	margin-top: 0;
-	text-align: center;
-	
+.menu .menu-item {
+  text-align: center;
+  color: #fff;
+  background-color: #219482;
+  padding: 1rem 3rem;
 }
 
-
-/* Navigation*/
-
-nav{
-	height: 50px;
-	background-color: #fff;
+/* header */
+header {
+  background-image: url("/assets/images/learning.jpg");
+  height: 75vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav > ul{
-	display: flex;
-	flex-direction: row;
-	list-style-type: none;
+header .header-overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
 }
 
-nav > ul > li{
-	padding: 10px 20px;
-	font-weight: 700;
-	cursor: pointer;
-
+header .header-overlay .container-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
-nav > ul > li:hover{
-	background-color: #000;
-	color: #fff;
-	transform: scale(1.2, 1.2);
-	transition: all 0.5s;
+header .header-overlay .container-header .title {
+  color: #219482;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
 }
+
+header .header-overlay .container-header .sub-title {
+  color: #219482;
+  font-weight: 300;
+  font-size: 2rem;
+  text-align: center;
+}
+
+header .header-overlay .container-header button {
+  padding: 20px;
+  border: 1px solid #219482;
+  color: #fff;
+  background-color: #219482;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
