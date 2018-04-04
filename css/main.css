@@ -3,8 +3,7 @@
 /* Assets */
 /* general reset*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "ubuntu", sans-serif;
@@ -15,14 +14,9 @@
 /* Assets */
 /* navigation */
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style-type: none;
 }
 
@@ -35,37 +29,26 @@
 
 /* header */
 header {
-  background-image: url("/assets/images/learning.jpg");
+  background-image: url("../assets/images/learning.jpg");
   height: 75vh;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 header .header-overlay {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 header .header-overlay .container-header {
   background-color: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 header .header-overlay .container-header .title {
