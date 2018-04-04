@@ -1,6 +1,7 @@
 @import 'variables';
 
-/* general reset*/
+/**************** general reset ****************/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,3 +9,11 @@
     font-family: $fontFamily-default;
 }
 
+/**************** display ****************/
+
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}

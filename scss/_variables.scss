@@ -1,14 +1,25 @@
-/* Colors */
+/**************** colors ****************/
+
 $color-default: #fff;
 $color-title:rgb(13%, 58.1%, 50.9%);
-$backgroundColor-default: rgb(13%, 58.1%, 50.9%);
 
+/**************** background-colors ****************/
+
+$default-bgc: rgb(13%, 58.1%, 50.9%);
 $header-bgc: #000;
 
-/* Fonts */
-$fontFamily-default: 'ubuntu', sans-serif;
-$big-fs: 3rem;
-$med-fs: 2rem;
+/**************** fonts ****************/
 
-/* Assets */
-$backgroundImage: url('../assets/images/learning.jpg');
+$fontFamily-default: 'ubuntu', sans-serif;
+$big-fs: 2.5rem;
+$med-fs: 1.5rem;
+
+/**************** assets ****************/
+
+$bgc-img: url('/assets/images/learning.jpg');
+
+/**************** media queries ****************/
+
+$break-small: 320px;
+$break-medium: 800px;
+$break-large: 1200px;

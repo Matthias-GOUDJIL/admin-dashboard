@@ -1,0 +1,8 @@
+
+/**************** medium device ****************/
+
+@media screen and (max-width: $break-medium) {
+  .menu{
+    flex-direction: column;
+  }
+}

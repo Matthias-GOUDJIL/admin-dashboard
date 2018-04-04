@@ -1,55 +1,74 @@
 @import 'variables';
 
-/* navigation */
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    list-style-type: none;
-    .menu-item{
-        text-align: center;
-        color: $color-default;
-        background-color: $backgroundColor-default;
-        padding: 1rem 3rem;
-    }
-}
-
-
-/* header */
+/**************** header ****************/
 header {
-    background-image: $backgroundImage;
-    height: 75vh;
+    background-image: $bgc-img;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    .header-overlay{
+    justify-content: center;
+
+/**************** header-overlay ****************/
+
+    .header-overlay {
+        width: 95%;
         background-color: rgba(255, 255, 255, 0.5);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        .container-header{
-            background-color: rgba($color: #000000, $alpha: 0.5);
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+/**************** navigation ****************/
+        
+        .menu {
             display: flex;
-            flex-flow: column wrap;
-            .title{
-            color: $color-title;
-            font-weight: 700;
-            font-size: $big-fs;
-            text-align: center;
+            justify-content: flex-end;
+            list-style-type: none;
+            .menu-item {
+                min-width: 200px;
+                text-align: center;
+                color: $color-default;
+                background-color: $default-bgc;
+                padding: 1rem 0;
+                a{
+                    text-decoration: none;
+                }
             }
-            .sub-title{
+        }
+
+
+/**************** contenu du header ****************/
+        
+        .container-header {
+            margin: auto;
+            padding: 1rem;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            .title {
+                padding: 10px;
+                color: $color-title;
+                font-weight: 700;
+                font-size: $big-fs;
+                text-align: center;
+            }
+            .sub-title {
+                padding: 10px;
                 color: $color-title;
                 font-weight: 300;
                 font-size: $med-fs;
                 text-align: center;
             }
-            button{
+            button {
                 padding: 20px;
-                border: 1px solid $backgroundColor-default;
+                margin: 10px;
+                border: 1px solid $default-bgc;
                 color: $color-default;
-                background-color: $backgroundColor-default;
+                background-color: $default-bgc;
                 font-size: 1.2rem;
                 text-align: center;
             }
