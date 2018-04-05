@@ -1,9 +1,9 @@
-/* Colors */
-/* Background-colors*/
-/* Fonts */
-/* Assets */
-/* Media queries*/
-/* general reset */
+/**************** colors ****************/
+/**************** background-colors ****************/
+/**************** fonts ****************/
+/**************** assets ****************/
+/**************** media queries ****************/
+/**************** general reset ****************/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,7 +12,7 @@
   font-family: "ubuntu", sans-serif;
 }
 
-/*  display */
+/**************** display ****************/
 .hide {
   display: none;
 }
@@ -21,12 +21,12 @@
   display: block;
 }
 
-/* Colors */
-/* Background-colors*/
-/* Fonts */
-/* Assets */
-/* Media queries*/
-/* header */
+/**************** colors ****************/
+/**************** background-colors ****************/
+/**************** fonts ****************/
+/**************** assets ****************/
+/**************** media queries ****************/
+/**************** header ****************/
 header {
   background-image: url("/assets/images/learning.jpg");
   height: 100vh;
@@ -39,6 +39,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /**************** header-overlay ****************/
 }
 
 header .header-overlay {
@@ -54,8 +55,8 @@ header .header-overlay {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* navigation */
-  /* contenu du header*/
+  /**************** navigation ****************/
+  /**************** contenu du header ****************/
 }
 
 header .header-overlay .menu {
@@ -125,6 +126,7 @@ header .header-overlay .container-header button {
   text-align: center;
 }
 
+/**************** medium device ****************/
 @media screen and (max-width: 800px) {
   .menu {
     -webkit-box-orient: vertical;
@@ -132,5 +134,117 @@ header .header-overlay .container-header button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+/**************** colors ****************/
+/**************** background-colors ****************/
+/**************** fonts ****************/
+/**************** assets ****************/
+/**************** media queries ****************/
+/**************** modal ****************/
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  /**************** modal-content ****************/
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal .modal-content {
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #c9c9c9;
+  width: 250px;
+  height: auto;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  /**************** form-login ****************/
+}
+
+.modal .modal-content .form-login {
+  color: #c9c9c9;
+  background-color: rgba(67, 138, 196, 0.774);
+}
+
+.modal .modal-content .form-login legend {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5%;
+  padding: 5%;
+}
+
+.modal .modal-content .form-login div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-content .form-login div label {
+  margin: 0.3rem;
+}
+
+.modal .modal-content .form-login div input {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.modal .modal-content .form-login .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modal .modal-content .form-login .btn button {
+  margin: auto;
+  width: 33%;
+  border: none;
+  padding: 0.8rem;
+  background-color: #3c57ec;
+}
+
+.modal .modal-content .form-login .btn button a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #c9c9c9;
+}
+
+.modal .modal-content .form-login .inscription {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-content .form-login .inscription .btn-inscription {
+  margin: 1rem auto;
+  width: 75%;
+  border: none;
+  padding: 0.6rem;
+  background-color: #ad6060;
+  text-align: center;
+}
+
+.modal .modal-content .form-login .inscription .btn-inscription a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #c9c9c9;
 }
 /*# sourceMappingURL=main.css.map */
