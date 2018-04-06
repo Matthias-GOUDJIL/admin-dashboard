@@ -29,7 +29,6 @@
 /**************** header ****************/
 header {
   background-image: url("/assets/images/learning.jpg");
-  height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +42,8 @@ header {
 }
 
 header .header-overlay {
-  width: 95%;
+  width: 100%;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,13 +72,14 @@ header .header-overlay .menu {
 header .header-overlay .menu .menu-item {
   min-width: 200px;
   text-align: center;
-  color: #fff;
-  background-color: #219482;
+  background-color: #10474d;
+  color: #d7d7d7;
   padding: 1rem 0;
 }
 
 header .header-overlay .menu .menu-item a {
   text-decoration: none;
+  color: #d7d7d7;
 }
 
 header .header-overlay .container-header {
@@ -157,9 +158,9 @@ header .header-overlay .container-header button {
 }
 
 .modal .modal-content {
+  background-color: #10474d;
   margin: auto;
   margin-top: 50px;
-  padding: 10px;
   background-color: #c9c9c9;
   width: 250px;
   height: auto;
@@ -170,14 +171,6 @@ header .header-overlay .container-header button {
 
 .modal .modal-content .form-login {
   color: #c9c9c9;
-  background-color: rgba(67, 138, 196, 0.774);
-}
-
-.modal .modal-content .form-login legend {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 5%;
-  padding: 5%;
 }
 
 .modal .modal-content .form-login div {
@@ -188,6 +181,14 @@ header .header-overlay .container-header button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.modal .modal-content .form-login div button {
+  margin: auto;
+  width: 33%;
+  border: none;
+  padding: 0.8rem;
+  background-color: #3c57ec;
 }
 
 .modal .modal-content .form-login div label {
@@ -209,15 +210,7 @@ header .header-overlay .container-header button {
           flex-direction: row;
 }
 
-.modal .modal-content .form-login .btn button {
-  margin: auto;
-  width: 33%;
-  border: none;
-  padding: 0.8rem;
-  background-color: #3c57ec;
-}
-
-.modal .modal-content .form-login .btn button a {
+.modal .modal-content .form-login .btn a {
   text-decoration: none;
   font-size: 1rem;
   color: #c9c9c9;
@@ -246,5 +239,94 @@ header .header-overlay .container-header button {
   text-decoration: none;
   font-size: 1.2rem;
   color: #c9c9c9;
+}
+
+/**************** colors ****************/
+/**************** background-colors ****************/
+/**************** fonts ****************/
+/**************** assets ****************/
+/**************** media queries ****************/
+/**************** header ****************/
+header {
+  height: auto;
+}
+
+header .header-overlay nav {
+  background-color: #050505;
+  background-color: rgba(4, 4, 4, 0.6);
+  padding: 0.5rem;
+}
+
+header .header-overlay nav ul .home-icon {
+  color: #d7d7d7;
+  font-size: 2rem;
+}
+
+header .header-overlay nav ul .title {
+  padding: auto;
+  color: #d7d7d7;
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+/**************** dashbord ****************/
+.dashboard-container {
+  background-image: url("/assets/images/learning.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /**************** container-overlay ****************/
+  /**************** dashbord-contenu ****************/
+}
+
+.dashboard-container .container-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.83);
+  height: 100vh;
+  /**************** dashbord-menu****************/
+}
+
+.dashboard-container .container-overlay #dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-container .container-overlay #dashboard a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  padding: 1rem;
+  background-color: #10474d;
+  border-radius: 25% 0;
+}
+
+.dashboard-container .container-overlay #dashboard a i {
+  font-size: 2rem;
+}
+
+.dashboard-container section .courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dashboard-container section .courses .chart-box {
+  width: 50%;
+  height: 50%;
 }
 /*# sourceMappingURL=main.css.map */
