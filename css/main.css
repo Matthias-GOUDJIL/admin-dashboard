@@ -17,6 +17,10 @@
   display: none;
 }
 
+.hidepop {
+  display: none;
+}
+
 .active {
   display: block;
 }
@@ -28,7 +32,7 @@
 /**************** media queries ****************/
 /**************** header ****************/
 header {
-  background-image: url("/assets/images/learning.jpg");
+  background-image: url("../../assets/images/learning.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
@@ -79,6 +83,7 @@ header .header-overlay .menu .menu-item {
 
 header .header-overlay .menu .menu-item a {
   text-decoration: none;
+  color: #fff;
 }
 
 header .header-overlay .container-header {
@@ -143,7 +148,6 @@ header .header-overlay .container-header button {
 /**************** media queries ****************/
 /**************** modal ****************/
 .modal {
-  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -152,15 +156,10 @@ header .header-overlay .container-header button {
   /**************** modal-content ****************/
 }
 
-.modal:target {
-  display: block;
-}
-
 .modal .modal-content {
   margin: auto;
   margin-top: 50px;
-  padding: 10px;
-  background-color: #c9c9c9;
+  background-color: rgba(201, 201, 201, 0.8);
   width: 250px;
   height: auto;
   -webkit-box-shadow: 5px 5px 5px black;
@@ -169,82 +168,55 @@ header .header-overlay .container-header button {
 }
 
 .modal .modal-content .form-login {
-  color: #c9c9c9;
-  background-color: rgba(67, 138, 196, 0.774);
+  color: #fff;
+  padding: 1rem;
 }
 
-.modal .modal-content .form-login legend {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 5%;
-  padding: 5%;
-}
-
-.modal .modal-content .form-login div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.modal .modal-content .form-login div label {
-  margin: 0.3rem;
-}
-
-.modal .modal-content .form-login div input {
-  margin: 1rem;
+.modal .modal-content .form-login input {
+  margin: 0.5rem;
+  padding: 0.2rem 1rem;
   font-size: 1.2rem;
+  width: 100%;
 }
 
 .modal .modal-content .form-login .btn {
+  margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .modal .modal-content .form-login .btn button {
+  color: #fff;
   margin: auto;
   width: 33%;
   border: none;
-  padding: 0.8rem;
-  background-color: #3c57ec;
-}
-
-.modal .modal-content .form-login .btn button a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #c9c9c9;
+  padding: 0.7rem;
+  background-color: #219482;
 }
 
 .modal .modal-content .form-login .inscription {
-  margin: 1rem;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(0, 0, 0, 0.616);
 }
 
-.modal .modal-content .form-login .inscription .btn-inscription {
-  margin: 1rem auto;
-  width: 75%;
+.modal .modal-content .form-login .inscription p {
+  margin: auto;
+  text-align: center;
+}
+
+.modal .modal-content .form-login .inscription #btn-inscription {
+  color: #fff;
+  margin: auto;
   border: none;
   padding: 0.6rem;
   background-color: #ad6060;
   text-align: center;
-}
-
-.modal .modal-content .form-login .inscription .btn-inscription a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #c9c9c9;
 }
 /*# sourceMappingURL=main.css.map */
