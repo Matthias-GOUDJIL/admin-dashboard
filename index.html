@@ -32,17 +32,17 @@
 					<li class="menu-item hide">
 						<a href="dashbord">mon dashbord</a>
 					</li>
-					<li class="menu-item"><a  href="#connexion">connexion</a></li>
+					<li class="menu-item"><button id="btn-connexion">connexion</button></li>
 					<li class="menu-item">à propos</li>
 				</ul>
 			</nav>
 			
-			<!-- *************** modal *************** -->
-
-			<div id="connexion" class="modal">
+			<!-- *************** modal sign in  *************** -->
+			
+			<div id="signIn" class="modal hide">
 				<div class="modal-content">
 					<form class="form-login" action="#">					
-						<legend>connexion</legend>
+						<legend>sign in</legend>
 						<div>
 							<label for="pseudo">pseudo</label>
 							<input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
@@ -52,20 +52,46 @@
 							<input type="password" id="password" name="password" placeholder="mot de passe">
 						</div>
 						<div class="btn">
-							<button class="btn-submit" ><a href="#">submit</a></button>
+							<button class="btn-submit" >envoyer</button>
 							<button class="btn-retour"><a href="#">retour</a></button>							
 						</div>
 						<div class="inscription">
 							<p>pas encore inscrit?</p>
-							<button class="btn-inscription"><a href="#">inscription</a></button>
+							<button id="btn-inscription">inscription</button>
 						</div>
 					</form> 
 				</div>
 			</div>
+			
+			<!-- *************** modal sign up  *************** -->
+			
+			<div  id="signUp" class="modal hide ">
+					<div class="modal-content">
+						<form class="form-login" action="#">					
+							<legend>sign up</legend>
+							<div>
+									<label for="email">Votre email</label>
+									<input type="text" id="email" name="email" placeholder="email">
+								</div>
+							<div>
+								<label for="pseudo">Veuillez choisir un pseudo</label>
+								<input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
+							</div>
+							<div>
+								<label for="password">Veuillez choisir un mot de passe</label>
+								<input type="password" id="password" name="password" placeholder="mot de passe">
+							</div>
+							<div class="btn">
+								<button class="btn-submit" >envoyer</button>
+								<button class="btn-retour"><a href="#">retour</a></button>							
+							</div>
+						</form> 
+					</div>
+				</div>
 
 			<!-- *************** contenu header *************** -->
-
-			<div class="container-header">
+			
+			<div class="container-header active">
 				<h1 class="title">Formation développeur</h1>
 				<h3 class="sub-title">Devenez développeur web grâce à nos cours accessibles à tous</h3>
 				<button>en savoir plus</button>
@@ -96,7 +122,7 @@
 	</footer>
 
 
-
+	<script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

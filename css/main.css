@@ -79,6 +79,7 @@ header .header-overlay .menu .menu-item {
 
 header .header-overlay .menu .menu-item a {
   text-decoration: none;
+  color: #fff;
 }
 
 header .header-overlay .container-header {
@@ -143,17 +144,12 @@ header .header-overlay .container-header button {
 /**************** media queries ****************/
 /**************** modal ****************/
 .modal {
-  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
   /**************** modal-content ****************/
-}
-
-.modal:target {
-  display: block;
 }
 
 .modal .modal-content {
@@ -233,7 +229,7 @@ header .header-overlay .container-header button {
           align-items: center;
 }
 
-.modal .modal-content .form-login .inscription .btn-inscription {
+.modal .modal-content .form-login .inscription #btn-inscription {
   margin: 1rem auto;
   width: 75%;
   border: none;
@@ -242,7 +238,7 @@ header .header-overlay .container-header button {
   text-align: center;
 }
 
-.modal .modal-content .form-login .inscription .btn-inscription a {
+.modal .modal-content .form-login .inscription #btn-inscription a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #c9c9c9;
