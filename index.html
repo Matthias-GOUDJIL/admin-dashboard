@@ -7,15 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Dashboard admin</title>
+
 	<link rel="stylesheet" href="dist/css/main.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-	 crossorigin="anonymous">
-	 
+	 crossorigin="anonymous">	 
 </head>
 
 <body>
-
 
 	<!-- *************** header *************** -->
 
@@ -32,40 +31,49 @@
 					<li class="menu-item hide">
 						<a href="dashbord">mon dashbord</a>
 					</li>
-					<li class="menu-item"><a  href="#connexion">connexion</a></li>
+					<li class="menu-item"><button id="btn-connexion">connexion</button></li>
 					<li class="menu-item">à propos</li>
 				</ul>
 			</nav>
 			
-			<!-- *************** modal *************** -->
-
-			<div id="connexion" class="modal">
+			<!-- *************** modal sign in  *************** -->
+			
+			<div id="signIn" class="modal hidepop">
 				<div class="modal-content">
-					<form class="form-login" action="#">					
-						<legend>connexion</legend>
-						<div>
-							<label for="pseudo">pseudo</label>
-							<input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
-						</div>
-						<div>
-							<label for="password">mot de passe</label>
-							<input type="password" id="password" name="password" placeholder="mot de passe">
-						</div>
+					<form class="form-login">																	
+						<input type="text" id="pseudo" name="pseudo" placeholder="pseudo">					
+						<input type="password" id="password" name="password" placeholder="mot de passe">						
 						<div class="btn">
-							<button class="btn-submit" ><a href="#">submit</a></button>
-							<button class="btn-retour"><a href="#">retour</a></button>							
+							<button type="submit" class="btn-submit" >OK</button>
+							<button class="btn-retour">retour</button>							
 						</div>
 						<div class="inscription">
 							<p>pas encore inscrit?</p>
-							<button class="btn-inscription"><a href="#">inscription</a></button>
+							<button id="btn-inscription">inscription</button>
 						</div>
 					</form> 
 				</div>
 			</div>
+			
+			<!-- *************** modal sign up  *************** -->
+			
+			<div id="signUp" class="modal hidepop">
+					<div class="modal-content">
+						<form class="form-login">																	
+							<input type="text" id="pseudo" name="pseudo" placeholder="pseudo">
+							<input type="email" name="email" id="email">					
+							<input type="password" id="password" name="password" placeholder="mot de passe">						
+							<div class="btn">
+								<button type="submit" class="btn-submit" >OK</button>
+								<button class="btn-retour">retour</button>							
+							</div>
+						</form> 
+					</div>
+				</div>
 
 			<!-- *************** contenu header *************** -->
-
-			<div class="container-header">
+			
+			<div class="container-header active">
 				<h1 class="title">Formation développeur</h1>
 				<h3 class="sub-title">Devenez développeur web grâce à nos cours accessibles à tous</h3>
 				<button>en savoir plus</button>
@@ -96,7 +104,7 @@
 	</footer>
 
 
-
+	<script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
